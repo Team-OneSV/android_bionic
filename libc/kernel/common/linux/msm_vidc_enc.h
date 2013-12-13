@@ -164,9 +164,9 @@
 #define VEN_IOCTLBASE_NENC 0x800
 #define VEN_IOCTLBASE_ENC 0x850
 struct venc_ioctl_msg{
- void __user *in;
+ void *in;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
- void __user *out;
+ void *out;
 };
 #define VEN_IOCTL_SET_INTF_VERSION   _IOW(VEN_IOCTLBASE_NENC, 0, struct venc_ioctl_msg)
 #define VEN_IOCTL_CMD_READ_NEXT_MSG   _IOWR(VEN_IOCTLBASE_NENC, 1, struct venc_ioctl_msg)
